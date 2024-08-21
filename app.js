@@ -1,7 +1,7 @@
 
 
 
-const  addBtn = document.getElementById("button")
+/*const  addBtn = document.getElementById("button")
 
 
 addBtn.addEventListener("click",function(){
@@ -20,8 +20,37 @@ addBtn.addEventListener("click",function(){
 
 
     
-}) 
+})  */
 
+
+
+   
+
+    var filter = function(arr, fn){
+        let array = [];
+
+        
+        arr.forEach((item, index) => {
+            if (fn(item,index)) {
+                array.push(item)
+            } 
+        });
+        
+        console.log (array);
+    }
+    
+     
+    
+
+   const fn = function greaterThan10(i) {
+    return i === 0; 
+         }
+
+
+const newArray = filter([1,2,3], fn)
+
+
+        
 
 
 
