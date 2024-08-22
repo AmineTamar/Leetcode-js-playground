@@ -24,9 +24,10 @@ addBtn.addEventListener("click",function(){
 
 
 
-   
+  // 2634. Filter Elements from Array
 
-    var filter = function(arr, fn){
+
+   /* var filter = function(arr, fn){
         let array = [];
 
         
@@ -48,9 +49,56 @@ addBtn.addEventListener("click",function(){
 
 
 const newArray = filter([1,2,3], fn)
+*/
 
 
+
+/*var reduce = function(nums, fn, init) {
+    
+
+};
+ */
+
+
+/* function sumofarray (arr){
+    
+     
+    let sum =0;
+     for (let i =0 ; i < arr.length ; i++) {
+
+        sum= arr[i]+ sum ;
+
+       
+   }
+
+
+   console.log(sum)
+
+
+
+}
+sumofarray([1,2,3])
+        */
+
+
+
+// 2626. Array Reduce Transformation##
+
+ var reduce = function(nums, fn, init) {
+    
+   let res = init;
+    nums.forEach((element) => {
+
+        res =  fn(res,element)
         
+    });
+
+    return res
+};
 
 
+function sum(accum, curr) 
+{ return accum + curr; } 
 
+
+reduce([1,2,3,4], sum ,0)  
