@@ -1,6 +1,3 @@
-
-
-
 /*const  addBtn = document.getElementById("button")
 
 
@@ -22,12 +19,9 @@ addBtn.addEventListener("click",function(){
     
 })  */
 
+// 2634. Filter Elements from Array
 
-
-  // 2634. Filter Elements from Array
-
-
-   /* var filter = function(arr, fn){
+/* var filter = function(arr, fn){
         let array = [];
 
         
@@ -51,14 +45,11 @@ addBtn.addEventListener("click",function(){
 const newArray = filter([1,2,3], fn)
 */
 
-
-
 /*var reduce = function(nums, fn, init) {
     
 
 };
  */
-
 
 /* function sumofarray (arr){
     
@@ -80,11 +71,9 @@ const newArray = filter([1,2,3], fn)
 sumofarray([1,2,3])
         */
 
-
-
 // 2626. Array Reduce Transformation##
 
- var reduce = function(nums, fn, init) {
+/*var reduce = function(nums, fn, init) {
     
    let res = init;
     nums.forEach((element) => {
@@ -101,4 +90,27 @@ function sum(accum, curr)
 { return accum + curr; } 
 
 
-reduce([1,2,3,4], sum ,0)  
+reduce([1,2,3,4], sum ,0)   */
+let api = "https://jsonplaceholder.typicode.com/todos/1";
+
+fetch(api)
+  .then(response => response.json())
+  .then(json =>console.log(json))
+
+
+  .catch(function(err) {
+    console.log(err);
+  });
+function a(){
+    setTimeout(sayhell("helslo"), 1000)
+}
+  
+  
+   sayhell = msg => {
+    const p = document.createElement("p")
+    p.innerHTML=msg
+document.body.appendChild(p)
+
+  }
+a()
+
