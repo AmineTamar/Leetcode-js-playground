@@ -91,6 +91,8 @@ function sum(accum, curr)
 
 
 reduce([1,2,3,4], sum ,0)   */
+
+/*
 let api = "https://jsonplaceholder.typicode.com/todos/1";
 
 fetch(api)
@@ -114,3 +116,4 @@ document.body.appendChild(p)
   }
 a()
 
+ */
